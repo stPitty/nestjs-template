@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "tsConfigPath": "./tsconfig.json",
+  "sourceRoot": "src/main-service",
+  "compilerOptions": {
+    "deleteOutDir": true
+  },
+  "projects": {
+    "main-service": {
+      "type": "application",
+      "root": "src/main-service",
+      "entryFile": "main-service/main",
+      "sourceRoot": "src/main-service"
+    },
+    "@property/common": {
+      "type": "library",
+      "root": "common",
+      "entryFile": "index",
+      "sourceRoot": "common"
+    }
+  }
+}
